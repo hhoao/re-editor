@@ -95,6 +95,9 @@ class _CodeInputController extends ChangeNotifier implements DeltaTextInputClien
   }
 
   @override
+  bool onFocusReceived() => false;
+
+  @override
   AutofillScope? get currentAutofillScope => null;
 
   @override
